@@ -3,139 +3,147 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dev Book - Official Welcome Page</title>
-    
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <title>Dev Book Official</title>
     <style>
+        /* Basic Reset */
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: 'Poppins', sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
+
+        /* Body Background */
         body {
-            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
-            color: #ffffff;
+            background-color: #121826; /* Dark background matching the image */
+            display: flex;
+            justify-content: center;
+            align-items: center;
             min-height: 100vh;
+            padding: 20px;
+        }
+
+        /* Main Card Container */
+        .card {
+            background-color: #1e2538; /* Slightly lighter dark blue */
+            width: 100%;
+            max-width: 450px;
+            border-radius: 16px;
+            padding: 40px 25px;
+            text-align: center;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+            border: 1px solid #2a3449;
+        }
+
+        /* Heading Styles */
+        .card h1 {
+            color: #4fa8f8; /* Bright Blue */
+            font-size: 32px;
+            letter-spacing: 2px;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+
+        .card h2 {
+            color: #ffffff;
+            font-size: 20px;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+
+        .card p {
+            color: #9aa5b8; /* Light grey text */
+            font-size: 15px;
+            line-height: 1.5;
+            margin-bottom: 30px;
+        }
+
+        /* Button Styles */
+        .btn {
             display: flex;
             align-items: center;
             justify-content: center;
-            padding: 20px;
-        }
-        .container {
-            max-width: 500px;
             width: 100%;
-            background: rgba(255, 255, 255, 0.05);
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            border-radius: 20px;
-            padding: 40px 30px;
-            text-align: center;
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
-        }
-        .logo-box {
-            margin-bottom: 25px;
-        }
-        .logo-text {
-            font-size: 36px;
-            font-weight: 700;
-            letter-spacing: 1px;
-            background: linear-gradient(45deg, #38bdf8, #0ea5e9);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-        h1 {
-            font-size: 24px;
-            margin-bottom: 15px;
-            font-weight: 600;
-        }
-        p {
-            color: #94a3b8;
-            font-size: 15px;
-            line-height: 1.6;
-            margin-bottom: 35px;
-        }
-        .btn-whatsapp {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            width: 100%;
-            padding: 16px;
-            background: #22c55e;
-            color: white;
-            text-decoration: none;
+            padding: 15px;
+            border-radius: 10px;
             font-size: 18px;
-            font-weight: 600;
-            border-radius: 12px;
-            transition: all 0.3s ease;
-            box-shadow: 0 10px 20px rgba(34, 197, 94, 0.2);
+            font-weight: bold;
+            text-decoration: none;
+            color: #ffffff;
             margin-bottom: 15px;
+            transition: transform 0.2s, opacity 0.2s;
+            cursor: pointer;
         }
-        .btn-whatsapp:hover {
-            background: #16a34a;
-            transform: translateY(-2px);
-            box-shadow: 0 12px 24px rgba(34, 197, 94, 0.35);
+
+        .btn:hover {
+            transform: scale(1.02);
+            opacity: 0.9;
         }
-        .footer-text {
+
+        .btn-whatsapp {
+            background-color: #2ecc71; /* Green */
+            box-shadow: 0 4px 15px rgba(46, 204, 113, 0.3);
+        }
+
+        .btn-instant {
+            background-color: #0d8bf0; /* Blue */
+            box-shadow: 0 4px 15px rgba(13, 139, 240, 0.3);
+        }
+
+        .btn span {
+            margin-right: 10px;
+            font-size: 20px;
+        }
+
+        /* Disclaimer Text */
+        .disclaimer {
             font-size: 12px;
-            color: #64748b;
+            color: #6b7a93;
             margin-top: 25px;
+            margin-bottom: 0;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 480px) {
+            .card {
+                padding: 30px 20px;
+            }
+            .card h1 {
+                font-size: 26px;
+            }
+            .btn {
+                font-size: 16px;
+                padding: 12px;
+            }
         }
     </style>
-
-    <!-- ========================================== -->
-    <!-- 🔥 META PIXEL CODE (Naya Pixel)           -->
-    <!-- Pixel ID: 2866373487043890                -->
-    <!-- ========================================== -->
-    <script>
-    !function(f,b,e,v,n,t,s)
-    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-    n.queue=[];t=b.createElement(e);t.async=!0;
-    t.src=v;s=b.getElementsByTagName(e)[0];
-    s.parentNode.insertBefore(t,s)}(window, document,'script',
-    'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '2866373487043890');
-    fbq('track', 'PageView');
-    </script>
-    <noscript>
-        <img height="1" width="1" style="display:none"
-        src="https://www.facebook.com/tr?id=2866373487043890&ev=PageView&noscript=1"/>
-    </noscript>
-    <!-- ========================================== -->
-
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            document.querySelectorAll("a[href*='wa.me'], a[href*='whatsapp.com']").forEach(function(button) {
-                button.addEventListener('click', function() {
-                    fbq('track', 'Lead', { content_name: 'WhatsApp Button Click' });
-                });
-            });
-        });
-    </script>
 </head>
 <body>
 
-    <div class="container">
-        <div class="logo-box">
-            <div class="logo-text">DEV BOOK</div>
-        </div>
-
-        <h1>Welcome to Dev Book Official</h1>
+    <div class="card">
+        <!-- Heading -->
+        <h1>DEV BOOK</h1>
         
+        <!-- Subheading -->
+        <h2>Welcome to Dev Book Official</h2>
+        
+        <!-- Description -->
         <p>India's most trusted and fastest platform. Get your online ID instantly. 24/7 instant withdrawal and deposit available.</p>
 
-        <!-- 🔥 WhatsApp Number Updated: 7410522680 -->
-        <a href="https://wa.me/917410522680?text=I%20want%20to%20join%20Dev%20Book" class="btn-whatsapp" target="_blank">
-            💬 Join on WhatsApp
-        </a>
-        
-        <a href="https://wa.me/917410522680?text=I%20need%20New%20ID" class="btn-whatsapp" style="background: #0284c7; box-shadow: 0 10px 20px rgba(2, 132, 199, 0.2);" target="_blank">
-            🚀 Get Instant ID
+        <!-- WhatsApp Button with Number -->
+        <!-- Yahan number daal diya gaya hai -->
+        <a href="https://wa.me/919621285301" target="_blank" class="btn btn-whatsapp">
+            <span>💬</span> Join on WhatsApp
         </a>
 
-        <p class="footer-text">Disclaimer: This platform is intended for users aged 18 and above. Please participate responsibly and at your own risk.</p>
+        <!-- Instant ID Button with Number -->
+        <!-- Yahan bhi number daal diya gaya hai -->
+        <a href="https://wa.me/919621285301" target="_blank" class="btn btn-instant">
+            <span>🚀</span> Get Instant ID
+        </a>
+
+        <!-- Disclaimer -->
+        <p class="disclaimer">Disclaimer: This platform is intended for users aged 18 and above. Please participate responsibly and at your own risk.</p>
     </div>
 
 </body>
